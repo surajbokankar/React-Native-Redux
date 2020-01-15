@@ -20,9 +20,10 @@ export default class CounterApp extends Component{
     render(){
        // alert(JSON.stringify(this.props))
         if(this.props.isAPISuccess){
-           // alert("Success")
+          // alert(this.props.profileDetail.name)
            this.props.navigation.navigate('ItemDetail', {
             count: 10,
+            profileDetail:this.props.profileDetail
           })
         }
        return(

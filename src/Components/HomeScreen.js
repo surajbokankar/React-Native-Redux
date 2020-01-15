@@ -13,10 +13,15 @@ export default class Detail extends Component{
     }
 
     render(){
+      const { navigation } = this.props;
+      const profile=navigation.getParam('profileDetail', 'NO-ID')
         return(
           <View>
+
+          <Text>
+          Name: {profile.name} {profile.lastname}
+        </Text>
              <Text>
-            
                Detail Screen Called
 
              </Text>

@@ -5,7 +5,8 @@ import CounterComponent from '../Components/CounterComponet';
 
 const mapStateToProps = (state) => ({
      count: state.counterReducer.count,
-     isAPISuccess:state.counterReducer.isAPISuccess
+     isAPISuccess:state.counterReducer.isAPISuccess,
+     profileDetail:state.counterReducer.profileDetail
 
 });
 

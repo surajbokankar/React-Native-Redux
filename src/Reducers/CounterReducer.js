@@ -3,7 +3,7 @@ import * as Actions from '../Actions/ActionTypes';
 
 
 
-const initialState = { count:0,isAPISuccess:false };
+const initialState = { count:0,isAPISuccess:false,profileDetail:{} };
 
 
 
@@ -21,7 +21,11 @@ const CounterReducer = (state =initialState,action) => {
                 //alert(JSON.stringify(state))
                 return{
                     count:state.count,
-                    isAPISuccess:true
+                    isAPISuccess:true,
+                    profileDetail:{
+                        name:"Suraj",
+                        lastname:"Bokankar"
+                    }
                 };
                 
         default:
